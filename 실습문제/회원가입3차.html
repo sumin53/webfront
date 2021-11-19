@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입3차</title>
+    <style>
+        fieldset{
+            width: 500px;
+        }
+        div{
+            width:100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .true{
+            background-color: springgreen;
+        }
+
+        .false{
+            background-color: red;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="wrap">
+        <legend>회원가입 양식</legend>
+        <form action="#" method="post" onsubmit="return validate();">
+        <table>
+            <tr>
+                <td><label>아이디</label></td>
+                <td><input type="text" id="userid"></td>
+                <td><button>중복확인</button></td>
+            </tr>
+            <tr>
+                <td><label>비밀번호</label></td>
+                <td><input type="password" id="userpw"></td>
+                <td id="userpw-area"></td>
+            </tr>
+            <tr>
+                <td><label>비밀번호 확인</label></td>
+                <td><input type="password" id="userpw2"></td>
+            </tr>
+            <tr>
+                <td><label>이름</label></td>
+                <td><input type="text" id="username"></td> 
+                <td id="usernamearea"></td>
+            </tr>
+            <tr>
+                <td><label>성별</label></td>
+                <td>
+                    <label if="male">남</label>
+                    <input type="radio" id="male" value="male">
+                    <label if="female">여</label>
+                    <input type="radio" id="female" value="female">
+                </td>
+            </tr>
+            <tr>
+                <td><label>전화번호</label></td>
+                <td><input type="tel" id="usertel" placeholder='"-"포함'></td>
+            </tr>
+            <tr>
+                <td><label>이메일</label></td>
+                <td><input type="email" id="useremail"></td>
+            </tr>
+        </table>
+        
+        <div>
+            <button type="reset">초기화</button>
+            <button>회원가입</button>
+        </div>
+        </form>
+    </fieldset>
+    <!--jQuery 라이브러리 추가-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/회원가입3차.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭메뉴 2차</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap{
+            width: 400px;
+            height: 400px;
+            border:1px solid black;
+        }
+
+        #tab-wrap{
+            width: 100%;
+            height: 10%;
+        }
+
+        .tab{
+            float: left;
+            width: 70px;
+            line-height:40px;
+            font-size: 20px;
+            color:white;
+            text-align: center;
+            background-color: gray;
+
+        }
+
+        #sub-wrap{
+            clear: both;
+            width:100%;
+            height: 90%;
+        }
+        .sub{
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .sub > p{
+            height: 10%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .sub > img{
+            width: 100%;
+            height: 90%;
+        }
+
+        .tab-bc{
+            background-color: #eee;
+            color:black;
+        }
+        .dis-block{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="wrap">
+        <div id="tab-wrap">
+            <div class="tab">1번탭</div>
+            <div class="tab">2번탭</div>
+            <div class="tab">3번탭</div>
+        </div>
+        <div id="sub-wrap">
+            <div class="sub">
+                <p>1번탭내용</p>
+                <img src="images/cat.gif">
+            </div>
+            <div class="sub">
+                <p>2번탭내용</p>
+                <img src="images/pikachu.gif">
+            </div>
+            <div class="sub">
+                <p>3번탭내용</p>
+                <img src="images/sibadog.gif">
+            </div>
+        </div>
+    </div>
+    <!--jQuery 라이브러리 추가-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/탭메뉴2차.js"></script>
+</body>
+</html>

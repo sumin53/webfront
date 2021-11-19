@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM(Document Object Model)</h1>
+    <pre>
+        html(웹문서, 웹페이지) 문서를 객체 기반으로 표현한 것
+        -> HTML 문서에 작성된 내용을 트리구조(계층형으로 표현)로 나타냈을 때
+           각각의 태그, TEXT, COMMENT 등을 Node라고 한다. 
+
+        document : {
+            DOCTYPE : html,
+            HTML : {
+                HEAD : {
+                    TITLE : "문서 제목",
+                    STYLE : {..},
+                    META : {..}
+                },
+                BODY : {
+                    H1 : {TEXT : "제목", ATTRIBUTE : "속성"},
+                    COMMENT : {TEXT : "주석 내용"},
+                    DIV : {...}
+                }
+            }
+        }
+    </pre>
+
+    <hr>
+
+    <h1>Node 확인하기</h1>
+
+    <ul id="test">
+        <!-- Node 확인 테스트 주석입니다. -->
+        <li id="li1">1번</li>
+        <li class="cls">2번</li>
+        <!-- 중간 주석 -->
+        <li style="background-color:yellow;">3번</li>
+        <li>
+            <a href="#">4번</a>
+        </li>
+    </ul>
+
+    <button id="btn1">확인하기</button>
+
+    <pre>
+        parentNode : 부모 노드
+
+        childeNodes : 자식 노드 리스트
+        firstChild : 첫 번째 자식 노드
+        lastChild : 마지막 자식 노드
+        childeNodes[index] : index번째 자식 리스트
+
+        previousSibling : 이전 형제 노드 
+        nextSibling : 다음 형제 노드 
+    </pre>
+
+    <hr>
+
+    <h1>새로운 노드 생성 및 추가 , 제거</h1>
+    
+    <div id="div1">
+        <div>
+            <input type="text" name="div1-input">
+            <button type="botton">추가</button>
+            <!-- <button type="botton" onclick="removeParent(event /* this */);">제거</button> -->
+            <!-- <button type="botton" onclick="removeParent(/*event*/ this);">제거</button> -->
+        </div>
+    </div>
+
+    <hr><hr>
+
+    <h1>Node와 Element의 차이</h1>
+    <pre>
+        Node : 태그, 속성, 주석, 내용, 띄어쓰기 등을 모두 노드라고 표현함.
+        Element : Node의 하위 개념으로 요소 노드만을 가리킨다.
+    </pre>
+
+    <ul id="test2">
+        <li>테스트 1</li>
+        <li>테스트 2</li>
+        <li>테스트 3</li>
+        <li>테스트 4</li>
+        <li>테스트 5</li>
+    </ul>
+
+    <button id="test2-btn">확인하기</button>
+
+    <pre>
+        [Element만 선택하는 방법]
+
+        children : 자식 요소만 선택
+        parentElement : 부모 요소 선택
+
+        firstElementChild : 첫 번쨰 자식 요소 반환 (없으면 null)
+        lastElementChild : 마지막 자식 요소 반환 (없으면 null)
+
+        previousElementSibling : 이전 형제 요소 (없으면 null)
+        nextElementSibling : 다음 형제 요소 (없으면 null)
+    </pre>
+
+    <script src="js/09_DOM.js"></script>
+</body>
+</html>

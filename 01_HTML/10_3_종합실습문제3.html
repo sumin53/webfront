@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합실습문제3</title>
+</head>
+<body>
+    <fieldset>
+        <legend>필수 입력 사항</legend>
+        <table>
+            <tr>
+                <th>ID</th>
+                <td><input type="text" name="id"></td>
+                <td><button>중복 확인</button></td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td colspan="2"><input type="password" name="id"></td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td colspan="2"><input type="password" name="id"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="id"></td>
+                <td>
+                    <select>
+                        <option value="naver">naver.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                        <option value="nate">nate.com</option>
+                        <option value="daum">daum.com</option>
+                        <option selected>직접입력</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>추가 정보</legend>
+        프로필 사진 <input type="file" name="photo"> <br>
+
+        성별 :
+        <input type="radio" name="sex" id="M">
+        <label for="M">남자</label>
+
+        <input type="radio" name="sex" id="W">
+        <label for="W">여자</label> <br>
+
+        생년월일 :
+        <input type="date" name="baseball"><br>
+
+        취미
+        <input type="checkbox" name="hobby" id="baseball" value="">
+        <label for="baseball">야구</label>
+        <input type="checkbox" name="hobby" id="baseball">
+        <label for="baseball">농구</label>
+        <input type="checkbox" name="hobby" id="baseball">
+        <label for="baseball">야구</label> <br>
+
+        자기소개<br>
+        <textarea rows="5" cols="70"></textarea>
+    </fieldset>
+</body>
+</html>

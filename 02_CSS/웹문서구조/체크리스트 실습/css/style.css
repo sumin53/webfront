@@ -1,0 +1,128 @@
+*:not(html,body){
+    /*border:1px solid black;*/
+}
+
+ul,li,p{
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+#container{
+    width:1500px;
+    height: 600px;
+    margin: auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+}
+
+header > form{
+    width:17%;
+    height:100%;
+    float:left;
+}
+
+/* 로그인 */
+
+#login > div{
+    margin-bottom: 5px;
+}
+
+#login > div:nth-child(1) > input,
+#login > div:nth-child(2) > input{
+    float:right;
+}
+
+#login > div:nth-child(3){
+    margin-left: 78px;
+}
+
+/* header 로고 이미지 */
+
+#header-logo{
+    width:100px;
+    height:100px;
+    float: right;
+}
+
+#header-logo > img{
+    width:100%;
+    height: 100%;
+}
+
+/* nav */
+
+nav{
+    width:100%;
+    height: 50px;
+    background-color: #ccc;
+}
+
+#navi{
+
+}
+
+#navi > li{
+    width: 15%;
+    float: left;    
+}
+
+#navi > li > a{
+    width:100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+/* main - aside */
+
+main{
+    width:100%;
+    height: 400px;
+}
+
+aside{
+    width:15%;
+    height: 100%;
+    background-color: #ccc;
+    float: left;
+}
+
+aside img{
+    width:100%;
+    height: 100px;
+}
+
+/* section */
+
+section{
+    width:85%;
+    height: 100%;
+    background-color: #808080;
+    float: left;
+}
+
+/* footer */
+
+footer{
+    width:100%;
+    height:50px;
+    background-color: #e1dede;
+}
+
+footer > p{
+   text-align: center;
+   line-height: 48px;
+}

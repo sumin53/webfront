@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크 관련 태그</title>
+</head>
+<body>
+    <h1>하이퍼링크 관련 태그</h1>
+    <pre>
+        하이퍼링크는 웹 문서가 일반적인 문서와 구분되는 가장 핵심적인 기능이다.
+        클릭을 통해 연결된 다른 문서로 이동하는 방법을 편리하게 제공하는 기능.
+
+        1) 텍스트를 클릭해서 다른 문서로 이동
+        2) 이미지를 클릭해서 다른 문서로 이동
+        3) 같은 페이지 내에서 이동하는 방법
+    </pre>
+
+    <hr>
+
+    <h3>a 태그 (anchor : 닻, 고정시키다 , 묶어두다) </h3>
+    
+    <h4> href 속성 (hypertext reference) : 이동할 페이지를 작성하는 속성</h4>
+
+    <ul>
+        <li>
+            <a href="01_글자관련태그.html">글자 관련 태그</a>
+        </li>
+        <li>
+            <a href="02_목록관련태그.html">목록 관련 태그</a>
+        </li>
+        <li>
+            <a href="03_글자,목록태그_연습문제.html">글자, 목록 태그 연습문제</a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h4>img 태그를 이용한 링크 만들기</h4>
+    <a href="https://iei.or.kr/main/main.kh">
+        <img src="https://iei.or.kr/resources/images/main/main_renewal/top_logo.jpg">
+    </a>
+    
+    <hr>
+
+    <h4>title 속성 : 링크에 마우스 오버를 하는 경우 설명을 나타내는 속성</h4>
+    <a href="https://iei.or.kr/main/main.kh" title="KH정보교육원 홈페이지로 이동">
+        <img src="https://iei.or.kr/resources/images/main/main_renewal/top_logo.jpg">
+    </a>
+
+    <hr>
+
+    <h4>target 속성 : a태그 클릭 시 페이지가 열리는 방법을 지정</h4>
+    <pre>
+        _self : 현재 창에서 지정된 링크로 이동 (기본값)
+        <a href="01_글자관련태그.html" target="_self">글자 관련 태그</a>
+
+        _blank : 새 장에서 지정된 링크로 이동(새 창으로 열기)
+        <a href="02_목록관련태그.html" target="_blank">목록 관련 태그</a>
+
+        _parent : 부모 창에서 열기
+        -top : 가장 상위 창에서 열기
+    </pre>
+
+    <hr>
+    <hr>
+
+    <h3 id="main">한 페이지 내에서 이동(점프)하는 a태그 만들기</h3>
+
+    <ul>
+        <li> <a href="#song1">노래 1</a> </li>
+        <li> <a href="#song2">노래 2</a> </li>
+        <li> <a href="#song3">노래 3</a> </li>
+    </ul>
+    <!-- 클릭 시 id 속성 값이 song1 ~ 3 까지 일치하는 위치로 이동 -->
+
+    <h4 id="song1">노래 1</h4>
+    <pre>
+        I'm on the Next Level Yeah
+        절대적 룰을 지켜
+        내 손을 놓지 말아
+        결속은 나의 무기
+        광야로 걸어가
+        알아 네 Home ground
+        위협에 맞서서
+        제껴라 제껴라 제껴라
+        상상도 못한 Black out
+        유혹은 깊고 진해
+        (Too hot too hot)
+        맞잡은 손을 놓쳐
+        난 절대 포기 못해
+        I'm on the Next Level
+        저 너머의 문을 열어
+        Next Level
+        널 결국엔 내가 부셔
+        Next Level
+        KOSMO에 닿을 때까지
+        Next Level
+        제껴라 제껴라 제껴라
+        La la la la la la
+        La la la la la la
+        La la la la la la
+        La la la la la
+        I see the NU EVO.
+        적대적인 고난과 슬픔은
+        널 더 Popping 진화시켜
+        That's my naevis It's my naevis
+        You lead, we follow
+        감정들을 배운 다음
+        Watch me while I make it out
+        Watch me while I work it out
+        Watch me while I make it out
+        Watch me while I work it out
+        Work it work it work it out
+        감당할 수 없는 절망도
+        내 믿음을 깨지 못해
+        더 아픈 시련을 맞아도
+        난 잡은 손을 놓지 않을게 Oh
+        절대로 뒤를 돌아보지 말아
+        광야의 것 탐내지 말아
+        약속이 깨지면
+        모두 걷잡을 수 없게 돼
+        언제부턴가 불안해져 가는 신호
+        널 파괴하고 말 거야
+        (We want it)
+        Come on!
+        Show me the way to KOSMO Yeah
+        Black Mamba가 만들어낸 환각 퀘스트
+        aespa, ae를 분리시켜놓길 원해 그래
+        중심을 잃고 목소리도 잃고 비난받고
+        사람들과 멀어지는 착각 속에
+        naevis 우리 ae, ae들을 불러봐
+        aespa의 Next Level “P.O.S”를 열어봐
+        이건 REAL WORLD 깨어났어
+        We against the villain
+        What's the name?
+        Black Mamba
+        결국 난 문을 열어
+        그 빛은 네겐 Fire
+        (Too hot too hot)
+        난 궁금해 미치겠어
+        이다음에 펼칠 Story
+        Huh!
+        I'm on the Next Level
+        저 너머의 문을 열어
+        Next Level
+        널 결국엔 내가 부셔
+        Next Level
+        KOSMO에 닿을 때까지
+        Next Level
+        제껴라 제껴라 제껴라
+        I'm on the Next Level
+        더 강해져 자유롭게
+        Next Level
+        난 광야의 내가 아냐
+        Next Level
+        야수 같은 나를 느껴
+        Next Level
+        제껴라 제껴라 제껴라
+        Huh!
+    </pre>
+    <a href="#main">위로 이동</a>
+
+    <h4 id="song2">노래 2</h4>
+    <pre>
+        이제야 목적지를 정했지만
+        가려한 날 막아서네 난 갈 길이 먼데
+        새빨간 얼굴로 화를 냈던
+        친구가 생각나네
+        이미 난 발걸음을 떼었지만
+        가려한 날 재촉하네 걷기도 힘든데
+        새파랗게 겁에 질려 도망간
+        친구가 뇌에 맴도네
+        건반처럼 생긴 도로 위 수많은 동그라미들 모두가
+        멈췄다 굴렀다 말은 잘 들어
+        그건 나도 문제가 아냐
+        붉은색 푸른색 그 사이 3초 그 짧은 시간
+        노란색 빛을 내는 저기 저 신호등이
+        내 머릿속을 텅 비워버려 내가 빠른지도
+        느린지도 모르겠어 그저 눈앞이 샛노랄 뿐이야
+        솔직히 말하자면 차라리
+        운전대를 못 잡던 어릴 때가 더 좋았었던 것 같아
+        그땐 함께 온 세상을 거닐 친구가 있었으니
+        건반처럼 생긴 도로 위 수많은 조명들이 날 빠르게
+        번갈아 가며 비추고 있지만
+        난 아직 초짜란 말이야
+        붉은색 푸른색 그 사이 3초 그 짧은 시간
+        노란색 빛을 내는 저기 저 신호등이
+        내 머릿속을 텅 비워버려 내가 빠른지도
+        느린지도 모르겠어 그저 눈앞이 샛노랄 뿐이야
+        꼬질꼬질한 사람이나 부자 곁엔 아무도 없는
+        삼색 조명과 이색 칠 위에 서 있어 괴롭히지 마
+        붉은색 푸른색 그 사이 3초 그 짧은 시간
+        노란색 빛을 내는 저기 저 신호등이
+        내 머릿속을 텅 비워버려 내가 빠른지도
+        느린지도 모르겠어 그저 눈앞이 샛노랄 뿐이야 접기
+    </pre>
+    <a href="#main">위로 이동</a>
+
+
+    <h4 id="song3">노래 3</h4>
+    <pre>
+        구름에 빛은 흐려지고
+        창가에 요란히 내리는
+        빗물 소리만큼 시린 기억들이
+        내 마음 붙잡고 있는데
+        갈수록 짙어져 간 그리움에 잠겨
+        시간을 거슬러 갈 순 없나요
+        그때처럼만 그대 날 안아주면
+        괜찮을 텐데 이젠
+        젖어든 빗길을 따라가
+        함께한 추억을 돌아봐
+        흐려진 빗물에 떠오른 그대가
+        내 눈물 속에서 차올라와
+        갈수록 짙어져 간 그리움에 잠겨
+        시간을 거슬러 갈 순 없나요
+        그때처럼만 그대 날 안아주면
+        괜찮을 텐데 이젠
+        흩어져 가
+        나와 있어주던 그 시간도
+        그 모습도
+        다시 그때처럼만 그대를 안아서
+        시간을 거슬러 갈 순 없나요
+        한 번이라도 마지막일지라도
+        괜찮을 텐데 접기
+    </pre>
+    <a href="#main">위로 이동</a>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.block{
+    border:1px solid black;
+    width : 150px;
+    height: 150px;
+    color:white;
+    display:block; /*요소의 보여지는 형식으로 block으로 지정*/
+}
+
+.inline{
+    display: inline; /*요소의 보여지는 형식으로 inline으로 지정*/
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.area1{background-color: red;}
+.area2{background-color: orange;}
+.area3{background-color: yellow;}
+.area4{background-color: green;}
+.area5{background-color: blue;}
+
+/* 화면 분할 */
+
+#d1{
+    border : 2px solid red;
+    width: 300px;
+    height: 400px;
+}
+
+#d1-1{
+    /* width:300px;
+    height: 200px; */
+    /* %:가변크기 단위(부모크기에 비례) */
+    width:100%; /* 부모의 너비의 100% */
+    height:50%; /* 부모의 높이의 50% */
+    background-color: greenyellow;
+}
+
+#d1-2{
+    width:100%; /* 부모의 너비의 100% */
+    height:50%; /* 부모의 높이의 50% */
+    background-color: gray;
+}
+
+#d2{
+    border:2px solid black;
+    width:600px;
+    height: 200px;
+}
+
+#d2-1{
+    width:49%;
+    height: 100%;
+    background-color: bisque;
+    display: inline-block;
+}
+
+#d2-2{
+    width:49%;
+    height:100%;
+    background-color: blueviolet;
+    display: inline-block;
+}
